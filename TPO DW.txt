@@ -1,0 +1,7 @@
+tabindex para formulario
+tabindex="número"
+(Arranca en 0)
+
+fontawesome para linkdin, IG, youtube?
+
+Poner varios tipos de letra en caso de que no encuentre la primera
