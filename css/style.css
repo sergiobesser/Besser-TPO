@@ -104,6 +104,12 @@ main{
     .navsup{
         display: block;
     }
+    .img3{
+        width: 100%;
+    }
+    .formulario{
+        width: 100%;
+    }
 }
 
 footer{
