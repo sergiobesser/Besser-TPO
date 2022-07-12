@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/b7ab3ba6bd.js" crossorigin="anonymous"></script>
-    <title>Nuria Céspedes Fotografía</title>
+    <title>Cursos</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 <body>
     <header class="header">
@@ -21,32 +22,32 @@
             <a class="navsup" href="contacto.html">Contacto</a>
             <a class="navsup" href="cursos.html">Cursos</a>
             <a class="navsup" href="/src/index.html">Admin</a>
+
         </nav>
         <br>
     </header>
-
-    <main>
+    <main class="table">
         <br>
-        <div class="img1">
-            <img class="img1" src="./img/personas/_MG_9434_.jpg" width="800" alt="">
-        </div>
-        <br>
-        <div class="img2">
-            <img class="img2" src="./img/personas/carlos.jpg" width="800" alt="">
-        </div>
-        <br>
-        <div class="img1">
-            <img class="img1" src="./img/personas/tumblr_o2c9leljjJ1ubjc1yo1_1280.jpg" width="800" alt="">
-        </div>
-        <br>
-        <div class="img2">
-            <img class="img2" src="./img/personas/zombies291012_35.jpg" width="800" alt="">
-        </div>
-        <br>
-        <div class="img1">
-            <img class="img1" src="./img//personas/_MG_8878.JPG" width="800" alt="">
-        </div>
-        <br>
+        <div class="container" id="app">
+            <h2 id="cursos">Cursos</h2>
+            
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Duracion</th>
+                    <th>Nivel</th>
+                    <th>Precio</th>
+                </tr>
+                <tr v-for="curso in cursos">
+                    <td>{{curso.nombre}}</td>
+                    <td>{{curso.duracion}}</td>
+                    <td>{{curso.nivel}}</td>
+                    <td>{{curso.precio}}</td>
+                </tr>
+            </table>
+            
+        
+        <br><br><br>
     </main>
 
     <footer>
@@ -63,8 +64,6 @@
         </nav>
         <p id="footer">Derechos reservados 2022</p>
     </footer>
-
-
-    <script src="./js/main.js"></script>
+    <script src="./src/js/main.js"></script>
 </body>
 </html>
